@@ -1,0 +1,15 @@
+.deck-card {
+  width: 100px;
+  height: 140px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: burlywood;
+
+  position: absolute;
+  transform-origin: center; /* Set the rotation origin to the center */
+}
+
+.deck {
+  width: 150px;
+  height: 200px;
+}

@@ -1,0 +1,7 @@
+<div class="deck">
+  <div
+    class="deck-card"
+    *ngFor="let _ of cards; let i = index"
+    [style.transform]="calculateTransform(i, 40)"
+  ></div>
+</div>

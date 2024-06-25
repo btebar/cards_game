@@ -1,0 +1,84 @@
+.card {
+  width: 100px;
+  height: 140px;
+  border: 2px solid black;
+  border-radius: 8px;
+  /* Rounded corners */
+  background-color: white;
+  display: inline-block;
+  /* Allow multiple cards in a row */
+  margin: 10px;
+  /* Space between cards */
+  position: relative;
+  /* For positioning elements inside the card */
+  color: black;
+}
+
+.card-corner {
+  position: absolute;
+  font-size: 18px;
+  padding: 5px;
+
+  &.top {
+    top: 5px;
+    left: 5px;
+  }
+
+  &.bottom {
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
+.suit {
+  bottom: 5px;
+  right: 5px;
+}
+
+.card-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.suit-symbol {
+  font-size: 40px;
+}
+
+.card.hidden {
+  /* Styles for the hidden card */
+  background-color: burlywood;
+  /* Optional */
+  background-size: cover;
+}
+
+.card-back {
+  /* Optional styling for a dedicated card back element */
+  width: 100%;
+  height: 100%;
+}
+
+.suit-image {
+  max-width: 50px;
+  max-height: 70px;
+
+  &.small {
+    max-width: 30px;
+    max-height: 5%;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: transparent;
+  border-radius: 8px;
+
+  &.selectable {
+    cursor: pointer;
+
+    &.selected {
+      background-color: lightpink;
+    }
+  }
+}

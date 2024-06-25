@@ -1,0 +1,10 @@
+<div class="hand">
+  <app-card
+    *ngFor="let card of cards"
+    [rank]="card.rank"
+    [suit]="card.suit"
+    [hidden]="isHidden"
+    [selectable]="selectable"
+    (selectedChange)="onCardSelectedChange(card, $event)"
+  ></app-card>
+</div>

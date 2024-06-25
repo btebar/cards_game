@@ -1,0 +1,10 @@
+.hand {
+  display: flex;
+  /* Arrange cards in a row */
+  justify-content: space-evenly;
+  /* Center cards horizontally */
+  margin-bottom: 20px;
+  /* Optional spacing */
+  width: 100%;
+  gap: 10px;
+}

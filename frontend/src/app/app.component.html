@@ -1,0 +1,27 @@
+<div class="hands-container">
+  <app-hand
+    [cards]="topPlayerHand"
+    [isHidden]="topPlayerHidden"
+    [selectable]="topPlayerSelectable"
+  ></app-hand>
+  <div class="center-container">
+    <div class="deck-container">
+      <app-deck [cards]="deck"></app-deck>
+      <app-deck [cards]="discarded"></app-deck>
+    </div>
+    <div class="buttons">
+      <button *ngIf="!areCardsSelectableForMus" (click)="acceptMus()">
+        MUS
+      </button>
+      <button *ngIf="areCardsSelectableForMus" (click)="discard()">
+        DISCARD
+      </button>
+    </div>
+  </div>
+  <app-hand
+    [cards]="bottomPlayerHand"
+    [isHidden]="bottomPlayerHidden"
+    [selectable]="bottomPlayerSelectable"
+    (selectedCardsChange)="updateSelectedCardsForDiscard($event)"
+  ></app-hand>
+</div>

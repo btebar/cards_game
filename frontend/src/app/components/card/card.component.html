@@ -1,0 +1,18 @@
+<button
+  class="button"
+  [class.selectable]="selectable"
+  [class.selected]="selected"
+  [disabled]="!canBeDiscarded"
+  (click)="selectForDiscard()"
+>
+  <div class="card" [class.hidden]="hidden" [class.selected]="selected">
+    <div class="card-back" *ngIf="hidden"></div>
+    <ng-template [ngIf]="!hidden">
+      <div class="card-corner top">{{ rank }}</div>
+      <div class="card-corner bottom">{{ rank }}</div>
+      <div class="card-center">
+        <img [src]="suitImage" [alt]="suit + ' symbol'" class="suit-image" />
+      </div>
+    </ng-template>
+  </div>
+</button>

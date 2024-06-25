@@ -1,0 +1,47 @@
+.hands-container {
+  display: flex;
+  flex-direction: column;
+  /* Arrange hands vertically */
+  align-items: center;
+  height: 100vh;
+  /* Make container fill viewport height */
+  justify-content: space-around;
+  /* Space hands evenly */
+}
+
+.buttons {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 15px 25px; /* Add padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f48394;
+  color: white; /* White text */
+  cursor: pointer; /* Indicate clickable */
+  transition: background-color 0.3s; /* Smooth color transition */
+  font-size: 16px; /* Set font size */
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+button:hover {
+  background-color: #f1405b; /* Darker blue on hover */
+}
+
+.center-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.deck-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
